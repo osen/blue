@@ -1,13 +1,11 @@
 #include <cooleng/Core.h>
 
-#include <iostream>
+using namespace myengine;
 
 int main()
 {
-  Core core;
-  core.dummy();
-
-  std::cout << "Hello World!" << std::endl;
+  std::shared_ptr<Core> core = Core::initialize();
+  core->start();
 
   return 0;
 }
