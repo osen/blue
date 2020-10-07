@@ -36,6 +36,10 @@ endif()
 add_library(cooleng
   src/cooleng/Core.cpp
   src/cooleng/Core.h
+  src/cooleng/Entity.cpp
+  src/cooleng/Entity.h
+  src/cooleng/Component.cpp
+  src/cooleng/Component.h
 )
 target_link_libraries(cooleng rend)
 

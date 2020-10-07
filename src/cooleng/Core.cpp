@@ -1,4 +1,5 @@
 #include "Core.h"
+#include "Entity.h"
 
 namespace myengine
 {
@@ -15,7 +16,16 @@ Core::Core() { }
 
 void Core::start()
 {
-  // TODO:
+
+}
+
+std::shared_ptr<Entity> Core::addEntity()
+{
+  std::shared_ptr<Entity> rtn = std::make_shared<Entity>();
+
+  entities.push_back(rtn);
+
+  return rtn;
 }
 
 }
