@@ -3,7 +3,7 @@ namespace myengine
 
 struct Component
 {
-  int dummy;
+  virtual void onTick();
 };
 
 }

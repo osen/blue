@@ -45,5 +45,6 @@ target_link_libraries(cooleng rend)
 
 add_executable(demo
   src/demo/main.cpp
+  src/demo/Player.cpp
 )
 target_link_libraries(demo cooleng)
